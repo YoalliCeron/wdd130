@@ -1,0 +1,77 @@
+/* Define the CSS variables in the document :root pseudo-class selector using the color scheme you selected and documented in this week's site plan/graphic identity assignment.
+Begin by styling the headings and paragraph elements.
+Add colors to the fonts.
+Remove the underlines from the social media image links. Allowing the default underline on a hyperlink that is an image is not a good design and may lead to confusion of function. 
+Consider the following colors:
+primary-color: #1FA191
+secondary-color: #EFC431
+accent1-color: #D7E8E2
+accent2-color: #614D40
+*/
+:root {
+    --primary-color: #1FA191;
+    --secondary-color: #EFC431;
+    --accent1-color: #D7E8E2;
+    --accent2-color: #614D40;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 5%;
+    background-color: var(--accent2-color);
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    display: block;
+    opacity: 0.89;
+}
+
+.about img {
+    display: block;
+    width: 20%;
+    height: auto;
+    float: right;
+}
+
+article {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 80%; /* Ajusta el ancho del artículo */
+    background-color: var(--accent1-color); /* Color de fondo */
+    padding: 1em; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destacar */
+    opacity: 0.89;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+footer img {
+    width: 2%;
+    height: auto;
+}
