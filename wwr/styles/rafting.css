@@ -30,6 +30,9 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 10em;
     align-items: center;
+    background-color: var(--accent1-color);
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1em;
 }
 
@@ -120,9 +123,37 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-footer img {
-    width: 2%;
-    height: auto;
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: var(--accent1-color);
+    border-top: 2px solid var(--primary-color);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+footer .footer-text {
+    flex-grow: 1;
+    text-align: center;
+    color: var(--accent2-color);
+    font-weight: bold;
+    margin: 0;
+}
+
+footer .footer-icons {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer .footer-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 .adventures {
