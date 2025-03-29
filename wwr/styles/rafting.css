@@ -26,10 +26,34 @@ body {
     padding: 0 1em;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10em;
+    align-items: center;
+    padding: 1em;
+}
+
+header img {
+    width: 20%;
+    height: auto;
+    justify-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 .hero {
     position: relative;
 }
-
 
 .hero > img {
     display: block;
@@ -65,7 +89,6 @@ article {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destacar */
     opacity: 0.89;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
