@@ -62,30 +62,41 @@
                     </figure>
                 </div>
             </div>
-            <section class="adventure-container history-container">
-                <h2>Adventure Awaits You!</h2>
-                <div class="adventures">
-                    <figure>
-                        <img src="images/5.jpg" alt="Los Dientes del Diablo">
-                        <figcaption>Los Dientes del Diablo</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/2.jpg" alt="Big Mallard">
-                        <figcaption>Big Mallard</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/3.jpg" alt="Half Day Adventure">
-                        <figcaption>Half Day Adventure</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/4.jpg" alt="Devil's Canyon">
-                        <figcaption>Devil's Canyon</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/5.jpg" alt="Snake River">
-                        <figcaption>Snake River</figcaption>
-                    </figure>
-                </div>
+            <section class="form-container">
+                <h2>Please leave your enquiries here</h2>
+                <form action="#" method="post" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <fieldset>
+                        <legend>Purpose of Message:</legend>
+                        <label>
+                            <input type="radio" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                    <label>
+                        <input type="checkbox" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit" class="submit-button">Submit Your Message</button>
+                </form>
             </section>
         </main>
 
