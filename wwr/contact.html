@@ -25,6 +25,7 @@
                 <a href="contact.html">Contact Us</a>
             </nav>
         </header>
+        <h1>Contact Us - Rafting Down The River</h1>
 
         <main class="main-container">
             <div class="CompanyInformation">
@@ -73,16 +74,16 @@
 
                     <div>
                         <p>Purpose of Message:</p>
-                        <label>
-                            <input type="radio" name="purpose" value="general" required>
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general" required>
                             General Inquiry
                         </label>
-                        <label>
-                            <input type="radio" name="purpose" value="reservation">
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
                             Reservation Question
                         </label>
-                        <label>
-                            <input type="radio" name="purpose" value="suggestion">
+                        <label for="suggestion">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
                             Website Suggestion
                         </label>
                     </div>
@@ -90,8 +91,8 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
 
-                    <label>
-                        <input type="checkbox" name="subscribe">
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
                         Please subscribe me to the monthly newsletter
                     </label>
 
