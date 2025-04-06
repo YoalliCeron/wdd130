@@ -297,15 +297,14 @@ footer .footer-icons a img {
     font-size: 1em;
 }
 
-.contact-form fieldset {
-    border: 2px solid var(--accent2-color);
-    border-radius: 4px;
-    padding: 1em;
+.contact-form div {
+    margin-bottom: 1em;
 }
 
-.contact-form legend {
+.contact-form p {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--accent2-color);
+    margin-bottom: 0.5em;
 }
 
 .contact-form input[type="radio"] {
