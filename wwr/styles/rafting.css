@@ -233,3 +233,36 @@ footer .footer-icons a img {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.employee-profiles figure {
+    text-align: center;
+}
+
+.employee-profiles img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.employee-profiles figcaption {
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: var(--accent2-color);
+}
+
+.Employees h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+}
